@@ -1,0 +1,82 @@
+create table tb_categoria(
+id		int identity(200,1),
+categoria	varchar(20),
+descricao	varchar(100)
+)
+
+
+create table tb_cadforn(
+id		int identity(300,1),
+rz_social	varchar(50),
+nm_fantasia	varchar(50),
+cnpj		varchar(20),
+inc_estadual	varchar(20),
+cpf		varchar(20),
+estado		varchar(20),
+cep		varchar(20),
+complemento	varchar(30),
+cidade		varchar(30),
+endereco	varchar(50),
+tel_1		varchar(15),
+tel_2		varchar(15),
+celular		varchar(15),
+fax		varchar(15),
+email		varchar(50)
+)
+
+create table tb_cadprod(
+id		int identity(600,1),
+fornecedor	varchar(50),
+desc_prod	varchar(50),
+categoria	varchar(20),
+qtde		varchar(10),
+data_entra	varchar(10),
+data_venc	varchar(10),
+p_compra	varchar(10),
+p_venda		varchar(10),
+est_max		varchar(10),
+est_min		varchar(10)
+)
+
+create table tb_user(
+id		int identity(5000,1),
+nome		varchar(50),
+data_nasc	varchar(10),
+cpf		varchar(20),
+funcao		varchar(20),
+usuario		varchar(20),
+senha		varchar(20)
+)
+
+
+create table tb_c.pagar(
+id		int identity(7000,1),
+fornecedor	varchar(50),
+descricao_prod	varchar(30),
+dat_entra	varchar(10),
+valor		varchar(10),
+dat_venci	varchar(10),
+status		varchar(10)
+)
+
+@" INSERT INTO tb_cadforn (rz_social, nm_fantasia, cnpj, inc_estadual, estado, cep, complemento, cidade, endereco, tel_1, tel_2, celular, fax, email) VALUES ('"+ textBox2.Text +"', '"+ textBox3.Text +"', '"+ maskedTextBox1.Text +"', '"+ maskedTextBox4.Text +"', '"+ maskedTextBox5.Text +"', '"+ comboBox1.Text +"', '"+ maskedTextBox8.Text +"', '"+ textBox1.Text +"', '"+ textBox6.Text +"', '"+ textBox7.Text +"', '"+ maskedTextBox2.Text +"', '"+ maskedTextBox3.Text +"', '"+ maskedTextBox6.Text +"', '"+ maskedTextBox7.Text +"', '"+ textBox10.Text +"')	
+
+
+
+
+
+ textBox2.Text 
+ textBox3.Text 
+ maskedTextBox1.Text 
+ maskedTextBox4.Text 
+ maskedTextBox5.Text 
+ comboBox1.Text 
+ maskedTextBox8.Text 
+ textBox1.Text 
+ textBox6.Text 
+ textBox7.Text 
+ maskedTextBox2.Text 
+ maskedTextBox3.Text 
+ maskedTextBox6.Text 
+ maskedTextBox7.Text 
+ textBox10.Text 

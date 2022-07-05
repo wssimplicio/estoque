@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8291A0B-F2CF-4FFD-AE6D-C1B944DA4A49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>projeto_controle_estoque</RootNamespace>
+    <AssemblyName>projeto_controle_estoque</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alter_forn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alter_forn.Designer.cs">
+      <DependentUpon>Alter_forn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alter_prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alter_prod.Designer.cs">
+      <DependentUpon>Alter_prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cad_categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cad_categoria.Designer.cs">
+      <DependentUpon>Cad_categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cad_fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cad_fornecedor.Designer.cs">
+      <DependentUpon>Cad_fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cad_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cad_Produto.Designer.cs">
+      <DependentUpon>Cad_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cad_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cad_usuario.Designer.cs">
+      <DependentUpon>Cad_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consul_forn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consul_forn.Designer.cs">
+      <DependentUpon>Consul_forn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consul_produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consul_produto.Designer.cs">
+      <DependentUpon>Consul_produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir_forn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir_forn.Designer.cs">
+      <DependentUpon>Excluir_forn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir_prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir_prod.Designer.cs">
+      <DependentUpon>Excluir_prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex_user.Designer.cs">
+      <DependentUpon>Ex_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Research.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Research.Designer.cs">
+      <DependentUpon>Research.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alter_forn.resx">
+      <DependentUpon>Alter_forn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alter_prod.resx">
+      <DependentUpon>Alter_prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cad_categoria.resx">
+      <DependentUpon>Cad_categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cad_fornecedor.resx">
+      <DependentUpon>Cad_fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cad_Produto.resx">
+      <DependentUpon>Cad_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cad_usuario.resx">
+      <DependentUpon>Cad_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consul_forn.resx">
+      <DependentUpon>Consul_forn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consul_produto.resx">
+      <DependentUpon>Consul_produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir_forn.resx">
+      <DependentUpon>Excluir_forn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir_prod.resx">
+      <DependentUpon>Excluir_prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex_user.resx">
+      <DependentUpon>Ex_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Research.resx">
+      <DependentUpon>Research.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
